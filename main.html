@@ -16,14 +16,28 @@
         .right {
             text-align: right;
         }
+        /* General table styling */
+        table {
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
+            width: 100%;
+        }
+        /* Green and blue background classes */
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
     </style>
 </head>
 <body>
     <!-- Center-aligned heading -->
     <h1>HTML Assignment #3</h1>
 
-    <!-- Table 1 with specific structure and classes -->
-    <table id="table-1" class="middle" border="1" cellspacing="0" cellpadding="10">
+    <!-- Table 1 -->
+    <table id="table-1" class="middle">
         <tr>
             <td id="t11">left</td>
             <td id="t12" class="center">center</td>
@@ -38,6 +52,78 @@
             <td>left</td>
             <td class="center">center</td>
             <td class="right">right</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Table 2 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6">First row, single cell spanning 6 columns</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+        <tr>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+            <td>Cell</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- Table 3 -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3">First row with green background</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="t-image" colspan="3" rowspan="2">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Image" width="330" height="400">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3">Last row with blue background</td>
         </tr>
     </table>
 </body>
